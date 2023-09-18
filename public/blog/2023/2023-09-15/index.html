@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>老婆给我庆生！ | </title>
+
+  
+  
+
+  <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.5.10/mmenu.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap">
+
+  
+
+  
+  <!-- Primary Meta Tags -->
+  
+    
+  <meta name="description" content="Float features and usage guide">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="老婆给我庆生！ | ">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://张雅婷.我爱你/blog/2023/2023-09-15/">
+  
+  <meta property="article:published_time" content="">
+  <meta property="article:modified_time" content="">
+  <meta property="article:section" content="blog">
+  
+    <meta property="article:tag" content="Float">
+  
+    <meta property="article:tag" content="Zola">
+  
+    <meta property="article:tag" content="吃喝">
+  
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@xxx">
+  <meta name="twitter:creator" content="@xxx">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body-block">
+  
+  <main class="content-block">
+    <aside class="content-aside">
+      
+    <h1 class="title">
+    <a href="/"></a>
+  </h1>
+
+      <div class="menuanchor">
+        <a href="#nav-block">
+          <svg class="bi-list" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+      </div>
+      <section class="social-links">
+      </section>
+      <nav id="nav-block">
+        <ul id="tag-list">
+          
+          
+            <li class="item"><a href="https://张雅婷.我爱你/tags/chi-he/">吃喝</a></li>
+          
+            <li class="item"><a href="https://张雅婷.我爱你/tags/float/">Float</a></li>
+          
+            <li class="item"><a href="https://张雅婷.我爱你/tags/zola/">Zola</a></li>
+          
+        </ul>
+      </nav>
+    </aside>
+    
+  
+
+  <article class="content-article">
+    <aside class="article-meta">
+      <time></time>
+      <br>
+      <span>#Float #Zola #吃喝 </span>
+    </aside>
+    <main class="article-content">
+      <h1 class="heading">
+        老婆给我庆生！
+      </h1>
+      <p class="description">
+        Float features and usage guide
+      </p>
+      <p><img src="https://%E5%BC%A0%E9%9B%85%E5%A9%B7.%E6%88%91%E7%88%B1%E4%BD%A0/blog/2023/2023-09-15/Float.png" alt="Float" /></p>
+<p>Float 是一款為 <a href="https://www.getzola.org/">Zola</a> 設計的佈景主題。</p>
+<h2 id="te-se">特色</h2>
+<ul>
+<li>依據不同的螢幕尺寸提供最佳化版面，從小尺寸到大尺寸都可獲得優秀的閱讀體驗。</li>
+<li>文章卡片提供兩種卡片尺寸，重點文章可採用更醒目的寬版卡片。</li>
+<li>文章卡片配圖可自行指定，未指定者使用 <a href="https://source.unsplash.com/">Unsplash Source</a> 的隨機圖片。</li>
+<li>使用 Zola 的 <code>resize_image()</code> 自動產生適用於 DPR 1.0 ~ 3.0 的圖片，卡片配圖會由瀏覽器依據設備之 DPR 自動選用最佳尺寸的圖片。</li>
+<li>圖片啟用延遲載入，縮短頁面載入時間。</li>
+<li>預設埋入 HTML SEO 標籤、<a href="https://ogp.me/">Open Graph</a> 與 <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards">Twitter Cards</a> 標籤。</li>
+<li>整合 <a href="https://analytics.google.com/">Google Analytics</a>。</li>
+<li>整合 <a href="https://adsense.google.com/">Google AdSense</a>。</li>
+<li>版面為 <a href="https://support.google.com/adsense/answer/9261306">AdSense 自動廣告</a>最佳化，不會因自動廣告的寬度不一而破版。</li>
+<li>整合 <a href="https://like.co/">LikeCoin</a>。</li>
+<li>整合 <a href="https://utteranc.es/">utterances</a>，利用 <a href="https://github.com/">GitHub</a> issue 作為留言系統。</li>
+</ul>
+<h2 id="an-zhuang-yu-qi-yong">安裝與啟用</h2>
+<p>在您的 Zola 專案資料夾內：</p>
+<p>把 Float 以 Git 子模組的方式加入專案內：</p>
+<pre data-lang="sh" class="language-sh "><code class="language-sh" data-lang="sh">git submodule add https:&#x2F;&#x2F;gitlab.com&#x2F;float-theme&#x2F;float.git theme&#x2F;float
+</code></pre>
+<p>編輯您的 config.toml，指定 Float 作為佈景主題：</p>
+<pre data-lang="toml" class="language-toml "><code class="language-toml" data-lang="toml">theme = &quot;float&quot;
+</code></pre>
+<p>編輯您的 config.toml，加入 tags 作為分類系統：</p>
+<pre data-lang="toml" class="language-toml "><code class="language-toml" data-lang="toml">taxonomies = [
+    {name = &quot;tags&quot;, paginate_by = 10},
+]
+</code></pre>
+<p>複製 float/static/ 的所有子資料夾與檔案到您的 static/：</p>
+<pre data-lang="sh" class="language-sh "><code class="language-sh" data-lang="sh">cp -r themes&#x2F;float&#x2F;static&#x2F;* static&#x2F;
+</code></pre>
+<p>複製 float/content/ 的所有子資料夾與檔案到您的 content/：</p>
+<pre data-lang="sh" class="language-sh "><code class="language-sh" data-lang="sh">cp -r themes&#x2F;float&#x2F;content&#x2F;* content&#x2F;
+</code></pre>
+<h2 id="shi-yong-float">使用 Float</h2>
+<h3 id="wen-zhang-yu-pei-tu">文章與配圖</h3>
+<p>文章皆以資料夾的方式存在，如下例：</p>
+<pre><code>content&#x2F;
+└── blog&#x2F;
+    └── 2020&#x2F;
+        └── 2020-06-15-Zola-Theme-Float&#x2F;
+            ├── index.md
+            ├── pic1.png
+            ├── pic2.png
+            └── qa_report.pdf
+</code></pre>
+<p>文章為 index.md，文內的配圖或其它檔案也是放在文章資料夾內。</p>
+<h3 id="front-matter">Front-matter</h3>
+<p>Front-matter 請參照下列註解說明：</p>
+<pre data-lang="toml" class="language-toml "><code class="language-toml" data-lang="toml">title = &quot;Float theme for Zola&quot;
+description = &quot;Float features and usage guide&quot;
+draft = false
+[taxonomies]
+tags = [&quot;Float&quot;, &quot;Zola&quot;]
+[extra]
+feature_image = &quot;pic1.png&quot; # 卡片圖片。
+feature = true # 是否為重點文章，重點文章會以寬版卡片顯示。
+link = &quot;&quot; # 指定卡片連結，若有指定則卡片不會連結到文章頁。
+</code></pre>
+<h2 id="ke-zhi-hua">客製化</h2>
+<p>可客製化設定大多可以在 config.toml 的 <code>[extra]</code> 區段做設定：</p>
+<pre data-lang="toml" class="language-toml "><code class="language-toml" data-lang="toml">[extra]
+main_section = &quot;blog&quot;
+
+copyright = &quot;&quot;
+
+web_fonts = &quot;&lt;link rel=&#x27;stylesheet&#x27; href=&#x27;https:&#x2F;&#x2F;fonts.googleapis.com&#x2F;css2?family=Noto+Serif+TC:wght@500;700&amp;display=swap&#x27;&gt;&quot;
+
+google_analytics = false
+# google_analytics_id = &quot;UA-XXXXXX-X&quot;
+
+google_adsense = false
+# google_adsense_id = &quot;ca-pub-XXXXXXXXXXXXXXXX&quot;
+
+twitter_account = &quot;@xxx&quot;
+
+likecoin = false
+# likecoin_name = &quot;xxx&quot;
+
+utterances = false
+# utterances_repo = &quot;xxx&#x2F;xxx&quot;
+</code></pre>
+<h3 id="zi-ti">字體</h3>
+<p>字體的 CSS 位於 float/sass/font.scss，欲更換字體，把 float/sass/font.scss 複製到自己的 sass/font.scss，並修改之。</p>
+<h2 id="yi-zhi-wen-ti">已知問題</h2>
+<ul>
+<li>分頁設定皆須設為 10 篇分頁。因為 Zola 的 <code>get_section()</code> 無法取得該 section 的分頁設定。</li>
+</ul>
+
+    </main>
+    <section class="article-action-block">
+      
+      <!-- AddToAny BEGIN -->
+      <div class="addtoany-block">
+        <a href="https://www.addtoany.com/share#url=https:&#x2F;&#x2F;张雅婷.我爱你&#x2F;blog&#x2F;2023&#x2F;2023-09-15&#x2F;&amp;title=老婆给我庆生！" target="_blank" rel="noopener noreferrer nofollow"><img class="button" src="https://static.addtoany.com/buttons/a2a.svg"></a>
+        <a href="https://www.addtoany.com/add_to/mastodon?linkurl=https:&#x2F;&#x2F;张雅婷.我爱你&#x2F;blog&#x2F;2023&#x2F;2023-09-15&#x2F;&amp;linkname=老婆给我庆生！" target="_blank" rel="noopener noreferrer nofollow"><img class="button" src="https://static.addtoany.com/buttons/mastodon.svg"></a>
+        <a href="https://www.addtoany.com/add_to/telegram?linkurl=https:&#x2F;&#x2F;张雅婷.我爱你&#x2F;blog&#x2F;2023&#x2F;2023-09-15&#x2F;&amp;linkname=老婆给我庆生！" target="_blank" rel="noopener noreferrer nofollow"><img class="button" src="https://static.addtoany.com/buttons/telegram.svg"></a>
+        <a href="https://www.addtoany.com/add_to/twitter?linkurl=https:&#x2F;&#x2F;张雅婷.我爱你&#x2F;blog&#x2F;2023&#x2F;2023-09-15&#x2F;&amp;linkname=老婆给我庆生！" target="_blank" rel="noopener noreferrer nofollow"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
+        <a href="https://www.addtoany.com/add_to/facebook?linkurl=https:&#x2F;&#x2F;张雅婷.我爱你&#x2F;blog&#x2F;2023&#x2F;2023-09-15&#x2F;&amp;linkname=老婆给我庆生！" target="_blank" rel="noopener noreferrer nofollow"><img class="button" src="https://static.addtoany.com/buttons/facebook.svg"></a>
+        <a href="https://www.addtoany.com/add_to/line?linkurl=https:&#x2F;&#x2F;张雅婷.我爱你&#x2F;blog&#x2F;2023&#x2F;2023-09-15&#x2F;&amp;linkname=老婆给我庆生！" target="_blank" rel="noopener noreferrer nofollow"><img class="button" src="https://static.addtoany.com/buttons/line.svg"></a>
+      </div>
+      <!-- AddToAny END -->
+      
+    </section>
+    <br>
+    
+  </article>
+
+  </main>
+
+  <footer class="footer-container">
+    <section class="social-links">
+    </section>
+    <div class="copyright">
+      
+      
+    </div>
+    <div class="float">
+      <span>Theme by <a class="link" href="https://float-theme.netlify.app/">Float</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.5.10/mmenu.min.js"></script>
+  <script>
+    Mmenu.configs.offCanvas.page.nodetype = "main";
+    Mmenu.configs.offCanvas.page.selector = ".content-block";
+    Mmenu.configs.offCanvas.clone = true;
+    document.addEventListener(
+        "DOMContentLoaded", () => {
+            new Mmenu( "#nav-block", {
+              extensions: [
+                "pagedim-black",
+                "position-bottom",
+                "theme-dark",
+                "border-none",
+              ],
+              keyboardNavigation: {
+                "enable": true,
+                "enhance": true,
+              },
+              "setSelected": {
+                  "hover": true
+               },
+               "autoHeight": true
+            });
+        }
+    );
+  </script>
+  <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+</body>
+
+</html>
