@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://github.com/love-moon/yating-blog/sitemap.xml
+Sitemap: https://love-moon.github.io/sitemap.xml
