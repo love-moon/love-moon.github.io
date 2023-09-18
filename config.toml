@@ -1,12 +1,13 @@
 # The URL the site will be built for
-base_url = "https://github.com/love-moon/yating-blog/"
+base_url = "https://love-moon.github.io/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
+title = "张雅婷.我爱你"
+description = "记录我们"
 theme = "float"
 taxonomies = [
     {name = "tags", paginate_by = 10},
@@ -20,3 +21,5 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+main_section = "blog"
+copyright = "黄泽瀚"
