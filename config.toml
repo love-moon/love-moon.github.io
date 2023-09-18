@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://张雅婷.我爱你"
+base_url = "https://github.com/love-moon/yating-blog/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
