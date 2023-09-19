@@ -5,7 +5,8 @@
 {% block head %}
 <!-- Primary Meta Tags -->
 <meta name="description" content="{{ section.title | title }} | {{ config.title }}">
-
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="{{ section.title | title }} | {{ config.title }}">
 <meta property="og:type" content="website">

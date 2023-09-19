@@ -12,7 +12,8 @@
     {% set description = page.content %}
   {% endif %}
   <meta name="description" content="{{ description | striptags | truncate(length=100) | safe }}">
-
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="{{ page.title }} | {{ config.title }}">
   <meta property="og:type" content="article">
