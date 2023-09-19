@@ -37,9 +37,7 @@ jobs:
       - name: pull submodule
         run: git submodule init
       - name: pull submodule
-        run: git submodule update
-      - name: mkdir
-        run: mkdir templates      
+        run: git submodule update    
       - name: Build with Zola
         run: zola build
       - name: Upload artifact
