@@ -6,4 +6,3 @@ sort_by = "date"
 # No pagination will happen if this isn't set or if the value is 0
 paginate_by = 5
 +++
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
