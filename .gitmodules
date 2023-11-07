@@ -1,0 +1,3 @@
+[submodule "ting_theme"]
+	path = themes/ting_theme
+	url = https://gitee.com/love-moon/ting_theme.git
