@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<main class="article-list">
+  <article class="article-block title-block">
+    <h2 class="heading">
+      # {{ term.name }}
+    </h2>
+    <aside class="page">
+      Page {{ paginator.current_index }} / {{ paginator.number_pagers }}
+    </aside>
+  </article>
+
+
+
+
+  <div class="blog-list border bd-cyan">
+    <ul data-role="list" data-sort-class="painting-price" data-sort-dir="desc"
+      data-cls-list="unstyled-list row flex-justify-center mt-4" data-cls-list-item="cell-sm-6 cell-md-4">
+      <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+      {% for post in paginator.pages %}
+      <li>
+        <div class="img-container thumbnail">
+          <img src="{{ post.permalink | safe }}{{ post.extra.feature_image | safe }}" alt="{{ post.description }}">
+        </div>
+        <figcaption class="painting-name"> <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+          <figcaption class="painting-price" data-format="money">{{ post.date }}</figcaption>
+        </figcaption>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <article class="article-block read-more">
+    <a href="{{ paginator.next }}" class="link fg-indigo fg-magenta-hover">
+      <h4 class="heading">
+        Next
+      </h4>
+      </section>
+    </a>
+  </article>
+</main>
+{% endblock content %}

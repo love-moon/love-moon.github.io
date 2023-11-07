@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ section.title }}
+</h1>
+
+<div class="blog-list border bd-cyan">
+<ul data-role="list" data-sort-class="painting-price" data-sort-dir="desc"
+  data-cls-list="unstyled-list row flex-justify-center mt-4" data-cls-list-item="cell-sm-6 cell-md-4">
+  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+  {% for page in section.pages %}
+  <li>
+    <div class="img-container thumbnail">
+      <img src="{{ page.permalink | safe }}{{ page.extra.feature_image | safe }}" alt="{{ page.description }}">
+    </div>
+    <figcaption class="painting-name"> <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      <figcaption class="painting-price" data-format="money">{{ page.date }}</figcaption>
+    </figcaption>
+  </li>
+
+  <!-- <li>
+    <img class="avatar" src="{{ page.permalink | safe }}{{ page.extra.feature_image | safe }}" alt="{{ page.description }}">
+    <span class="label"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></span>
+    <span class="second-label">{{ page.date }}</span>
+</li> -->
+
+
+  {% endfor %}
+</ul>
+</div>
+{% endblock content %}

@@ -8,7 +8,7 @@ compile_sass = true
 build_search_index = true
 title = "张雅婷.我爱你"
 description = "记录我们"
-theme = "float"
+theme = "ting_theme"
 taxonomies = [
     {name = "tags", paginate_by = 10},
 ]
@@ -23,3 +23,7 @@ highlight_code = false
 # Put all your custom variables here
 main_section = "blog"
 copyright = "黄泽瀚"
+author='HZH'
+description='Stories of our love'
+avatar='/images/y.jpg'
+header_img='/images/y.jpg'

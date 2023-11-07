@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block head %}
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/olton/Metro-UI-CSS/build/css/metro-all.min.css"> -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metro4@4.5.4/build/metro.css" integrity="sha256-175VYmbsrn+oDNe95mvVCAgAc33YsMnEXn/ny2Q0ji0=" crossorigin="anonymous">
+  <title>{% block title %}{{ config.title }}{% endblock title %} - </title>
+  {% endblock head %}
+
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/gh/olton/Metro-UI-CSS/build/js/metro.min.js"></script>
+
+  <aside class="sidebar pos-absolute z-2 " data-role="sidebar" data-toggle="#sidebar-toggle-3" id="sb3"
+    data-shift=".shifted-content">
+    <div class="sidebar-header" data-image="{{ get_url(path=config.extra.header_img) }}">
+      <div class="avatar">
+        <img data-email="love-moon@qq.com" src="{{ get_url(path=config.extra.avatar) }}">
+      </div>
+      <span class="title fg-white">{{ config.title }}</span>
+      <span class="subtitle fg-white"> 2023 © {{config.extra.author}}</span>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="/"><span class="mif-home icon"></span>Home</a></li>
+      <li class="divider"></li>
+      <li><a><span class="mif-images icon"></span>标签</a></li>
+      <ul class="large">
+        {% set tags = get_taxonomy(kind="tags", lang=lang) %}
+        {% for term in tags.items %}
+          <li class="item"><a href="{{ term.permalink | safe }}">{{ term.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </ul>
+  </aside>
+  <div class="shifted-content h-100 p-ab">
+    <div class="app-bar pos-absolute bg-cobalt z-1" data-role="appbar">
+      <button class="app-bar-item c-pointer" id="sidebar-toggle-3">
+        <span class="mif-menu fg-white"></span>
+      </button>
+      <strong class="text-leader fg-white">{{ config.title }}</strong>
+    </div>
+
+
+
+
+
+    {% block content %}
+
+    {% endblock content %}
+  </div>
+
+
+
+
+  <section class="container-fluid more-question mt-10">
+    <div class="container">
+
+      <h3 class="text-bold text-center">HAVE MORE QUESTIONS?</h3>
+      <p class="text-leader text-center">
+        即使是地狱，无尽的轮回，我也不想放手
+      <div class="text-center mt-10">
+        <a href="/about" class="button large info outline">ABOUT US</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="container-fluid mt-auto">
+    <div class="container">
+      <ul class="footer__menu ">
+        <li><a class=" fg-magenta-hover" href="/">HOME</a></li>
+        <li><a class=" fg-magenta-hover" href="/easyquery">EASYQUERY.NET</a></li>
+        <li><a class=" fg-magenta-hover" href="https://metroui.org.ua">METRO UI</a></li>
+        <li><a class=" fg-magenta-hover" href="/blog/">BLOG</a></li>
+      </ul>
+
+      <hr class="mt-10 mb-10 thin">
+
+      <div class="d-flex flex-column flex-align-center">
+        <div> 2023 © HZH&ZYT</div><span class="ml-4 mute-text">All Rights Reserved.</span>
+        <div class="mute-text">All product names, logos, and brands are the property of their respective owners.</div>
+        <div>
+          Site built with <a class="fg-cyan" href="https://metroui.org.ua">Metro UI</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>

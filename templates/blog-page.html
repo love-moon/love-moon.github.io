@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<section class="container-fluid more-question mt-10">
+  <div class="container">
+
+    <h1 class="title text-center">
+      {{ page.title }}
+    </h1>
+    {% if page.description %}
+    <h3 class="remark dark">{{page.description}}</h3>
+    {%  endif %}
+    <p class="subtitle text-right"><strong>{{ page.date }}</strong></p>
+    <p >{{ page.content | safe }}</p>
+  </div>
+
+</section>
+
+
+
+{% endblock content %}
