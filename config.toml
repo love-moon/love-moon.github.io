@@ -21,7 +21,6 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
-main_section = "blog"
 copyright = "黄泽瀚"
 author='HZH'
 description='Stories of our love'
